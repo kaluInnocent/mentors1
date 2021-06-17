@@ -1,7 +1,7 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="icon"
@@ -9,60 +9,47 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main-style.css" />
     <title>Frontend Mentor | Stats preview card component</title>
   </head>
   <body>
-    <div class="card">
-      <div class="left-section">
-        <div class="heading">
-          <h1>Get <strong>insights</strong> that help your business grow.</h1>
-        </div>
-        <div class="description">
-          <p>
-            Discover the benefits of data analytics and make better decisions
-            regarding revenue, customer experience, and overall efficiency.
-          </p>
-        </div>
-        <div class="social-tab">
-          <div class="social-card">
-            <h2 class="stat-heading">10+</h2>
-            <p class="stat">Companies</p>
+    <main>
+      <div id="card">
+        <section id="left-section">
+          <div id="intro">
+            <h1 id="card-title">
+              Get <span id="accent">insights</span> that help your business
+              grow.
+            </h1>
+            <p id="description">
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience, and overall efficiency.
+            </p>
           </div>
-          <div class="social-card">
-            <h2 class="stat-heading">314</h2>
-            <p class="stat">Templates</p>
-          </div>
-          <div class="social-card">
-            <h2 class="stat-heading">12m+</h2>
-            <p class="stat">Queries</p>
-          </div>
-        </div>
+          <article id="statistics">
+            <div class="stats">
+              <span class="number">10K+</span>
+              <span class="label">Companies</span>
+            </div>
+            <div class="stats">
+              <span class="number">314</span>
+              <span class="label">Templates</span>
+            </div>
+            <div class="stats">
+              <span class="number">12M+</span>
+              <span class="label">Queries</span>
+            </div>
+          </article>
+        </section>
+        <section id="right-section"></section>
       </div>
-      <div class="right-section">
-        <img
-          class="right-image"
-          src="./images/image-header-desktop.jpg"
-          alt="Data analysts at work"
-        />
-      </div>
-    </div>
-    <div class="attribution">
+    </main>
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="https://github.com/kaluInnocent">Innocent Kalu</a>.
-    </div>
+        >Frontend Mentor.</a
+      >
+      Coded by <a href="#">Innocent Kalu</a>
+    </footer>
   </body>
 </html>
