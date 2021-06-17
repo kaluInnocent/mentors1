@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+:root {
+  /* Setting variables for
+        main-background, card-background 
+        and soft-violet respectively */
+
+  --primary: 233, 47%, 7%;
+  --secondary: 244, 38%, 16%;
+  --tertiary: 277, 64%, 61%;
+
+  --heading-font: "Inter", sans-serif;
+  --primary-font: "Lexend Deca", sans-serif;
+}
+
+html,
+body {
+  background-color: hsla(var(--primary), 1);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+*,
+** {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: var(--primary-font);
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+#card {
+  background-color: hsla(var(--secondary));
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  padding-bottom: 0;
+  margin: 20px 10px 20px 10px;
+}
+
+#right-section {
+  background: url("./images/image-header-mobile.jpg") hsla(var(--tertiary), 1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  width: 100%;
+  height: 384;
+  border-radius: 4px;
+}
+
+#left-section {
+  padding: 1.5em;
+  text-align: center;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+#accent {
+  color: hsla(277, 64%, 61%, 1);
+}
+#intro p {
+  line-height: 1.5em;
+}
+
+#card-title,
+.number,
+.label {
+  font-family: var(--heading-font);
+}
+
+#card-title,
+.number {
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+
+.number {
+  font-size: 1.2em;
+  line-height: 2em;
+}
+
+.label {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: crimson;
+  padding: 0.5em;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+#statistics {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0;
+}
+
+#statistics > * {
+  flex: 1 1 200px;
+  padding: 1em;
+}
+.number,
+label {
+  display: block;
+}
+
+@media screen and (man-width: 620px) {
+  main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+  }
+
+  #card {
+    background-color: hsla(var(--secondary));
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+    margin: 20px 10px 20px 10px;
+  }
+
+  #right-section {
+    background: url("./images/image-header-mobile.jpg") hsla(var(--tertiary), 1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 384;
+    border-radius: 4px;
+  }
+}
+
+/* Desktop and bigger tablets */
+
+@media screen and (min-width: 800px) {
+  main {
+    min-height: 100vh;
+  }
+  #card {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  #card > * {
+    flex: 1 1 50%;
+  }
+  #right-section {
+    background: url("./images/image-header-desktop.jpg")
+      hsla(var(--tertiary), 1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+  }
+  #left-section {
+    text-align: left;
+    text-align: inherit-start;
+    padding: 4em;
+  }
+
+  #statistics {
+    flex-wrap: nowrap;
+    margin-top: 4em;
+  }
+
+  #analytics > *:nth-child(2) {
+    margin: 0 1em;
+  }
+}
